@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { assetUrl } from '@/lib/asset'
 import { ExternalLink, SatelliteDish } from 'lucide-react'
 import Eyebrow from '../components/Eyebrow'
 import { useSiteData } from '../data/store'
@@ -57,7 +58,7 @@ export default function Portfolio({ index = '04' }: { index?: string }) {
                   {item.imageDataUrl ? (
                     <div className="aspect-[16/10] overflow-hidden border-b hairline">
                       <img
-                        src={item.imageDataUrl}
+                        src={assetUrl(item.imageDataUrl)}
                         alt={item.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />

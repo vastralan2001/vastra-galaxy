@@ -93,9 +93,9 @@ export const defaultSiteData: SiteData = {
     },
     {
       id: 'proj-ai-hues',
-      title: 'AI Hues · AI 时代的职业规划与 Upskilling 平台',
+      title: 'AI Hues · 开源项目评测与发现平台',
       description:
-        'Kimi 实习主导项目：面向 AI 时代的职业规划与 Upskilling 平台。从 0 到 1 跑通 PRD 全流程，历经「智能开源项目发现与孵化平台 → 工具站版 → Upskilling 评测」多轮原型迭代，已完成内部 pre 并持续改进。',
+        'Kimi 实习主导项目：智能开源项目评测与发现平台——用自然语言描述想法，从 1000+ 开源项目中匹配最合适的技术栈，并按 6 个维度打分评测。从 0 到 1 跑通 PRD 全流程，历经孵化平台 → 工具站 → Upskilling 评测多轮原型迭代，已完成内部 pre 并持续改进。',
       imageDataUrl: '/covers/ai-hues.jpg',
       tags: ['Kimi 实习', '0→1', '职业规划', 'Upskilling', 'PRD'],
       link: 'https://nkbm7juvseh6m.ok.kimi.link/',

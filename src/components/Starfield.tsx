@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { assetUrl } from '@/lib/asset'
 
 interface Star { x: number; y: number; r: number; vx: number; vy: number; base: number; phase: number; speed: number }
 
@@ -69,7 +70,7 @@ export default function Starfield() {
     <div className="fixed inset-0 -z-10 pointer-events-none" aria-hidden="true">
       <div className="absolute inset-0 bg-cosmos-base" />
       <img
-        src="/nebula.png"
+        src={assetUrl('nebula.png')}
         alt=""
         className="absolute inset-0 w-full h-full object-cover opacity-50 animate-breathe"
         style={{ transformOrigin: 'center' }}

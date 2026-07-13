@@ -39,7 +39,7 @@ export const PLANETS: Planet[] = [
   // 商业轨道
   { id: 'kimi', name: 'Kimi（月之暗面）', time: '2026.04 – 至今', category: 'business', orbit: 2, angle: 90, featured: true,
     role: 'AI 产品实习 · AI Hues 平台',
-    highlights: ['主导 AI Hues（AI 时代的职业规划与 Upskilling 平台）从 0 到 1：跑通 PRD 全流程，完成孵化平台 → 工具站 → Upskilling 评测多轮原型迭代与内部 pre', '独立开发多个 AI 原生工具 demo：FocusFlow 个人工作台、秋招岗位追踪器、RED PEN 插件、Skillhub 聚合 demo 等，覆盖需求定义到上线部署全链路'] },
+    highlights: ['主导 AI Hues（开源项目评测与发现平台）从 0 到 1：跑通 PRD 全流程，完成孵化平台 → 工具站 → Upskilling 评测多轮原型迭代与内部 pre', '独立开发多个 AI 原生工具 demo：FocusFlow 个人工作台、秋招岗位追踪器、RED PEN 插件、Skillhub 聚合 demo 等，覆盖需求定义到上线部署全链路'] },
   { id: 'meituan', name: '美团 Beam 小美', time: '2026.01 – 至今', category: 'business', orbit: 2, angle: 40,
     role: 'AI Agent · BeamRD · Agent 应用研发探索工程师',
     highlights: ['人性化营销实验负责人：因子实验设计到落地，目标用户池 34 万+', '公司级外部生态入口 Agent 创新项目产品负责人，0→1 设计与验证', '独立完成 HiveSQL 圈人 → A/B 分流 → LLM Prompt → 效果评估的全链路闭环', '向美团 Agent 技术委员会汇报 AI 行业洞察与策略建议'] },
