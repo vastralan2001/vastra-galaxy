@@ -123,7 +123,7 @@ function PasswordGate({ onUnlock }: { onUnlock: () => void }) {
           轻量门禁：密码摘要仅存本机浏览器。真正私密层待后端版。
         </p>
         <div className="mt-5 text-center">
-          <a href="/" className="text-xs text-ink-faint hover:text-ink-dim transition-colors">
+          <a href="./" className="text-xs text-ink-faint hover:text-ink-dim transition-colors">
             ← 返回公开站
           </a>
         </div>
@@ -613,7 +613,7 @@ export default function Admin() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <a href="/" className={btnCls}>
+            <a href="./" className={btnCls}>
               ← 公开站
             </a>
             <button

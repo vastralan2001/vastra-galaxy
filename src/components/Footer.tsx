@@ -4,7 +4,7 @@ export default function Footer() {
     <footer className="relative border-t hairline">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="font-display text-sm tracking-[0.15em] text-ink">
-          <a href="/admin.html" className="text-star-gold mr-2" aria-label="管理舱入口" title="">
+          <a href="admin.html" className="text-star-gold mr-2" aria-label="管理舱入口" title="">
             ✦
           </a>
           羽羊 Vastra
