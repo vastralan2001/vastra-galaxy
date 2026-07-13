@@ -31,7 +31,7 @@ export default function Hero() {
           羽羊 / VASTRA
         </motion.p>
         <motion.p custom={3} variants={line} initial="hidden" animate="show" className="mt-8 text-base md:text-lg text-ink-dim leading-relaxed">
-          AI 时代的商业分析师 &amp; 活动主理人 · 务实的理想主义者
+          AI 时代的产品工程师 / 活动主理人 · 务实的理想主义者
         </motion.p>
         <motion.p custom={4} variants={line} initial="hidden" animate="show" className="mt-4 text-sm md:text-base text-ink-faint leading-relaxed max-w-xl mx-auto">
           欢迎驶入我的个人星系——这里的每一段经历，都是一颗仍在发光的小行星。

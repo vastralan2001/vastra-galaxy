@@ -51,7 +51,7 @@ export const defaultSiteData: SiteData = {
   profile: {
     name: '蓝天翔',
     alias: '羽羊 / VASTRA',
-    tagline: 'AI 时代的商业分析师 & 活动主理人 · 务实的理想主义者',
+    tagline: 'AI 时代的产品工程师 / 活动主理人 · 务实的理想主义者',
     greeting: '欢迎驶入我的个人星系——这里的每一段经历，都是一颗仍在发光的小行星。',
   },
   experiences: [
