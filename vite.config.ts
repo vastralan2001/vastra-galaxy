@@ -5,7 +5,8 @@ import { inspectAttr } from 'plugin-inspect-react-code'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  // GitHub Pages 部署在子路径 /vastra-galaxy/ 下，通过环境变量切换；自定义域名/Vercel 用根路径
+  base: process.env.VITE_BASE || '/',
   plugins: [inspectAttr(), react()],
   server: {
     port: 3000,

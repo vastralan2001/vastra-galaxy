@@ -30,12 +30,12 @@ function PlanetDot({
   return (
     <button
       onClick={onSelect}
-      className="absolute group flex items-center gap-2 -translate-x-1/2 -translate-y-1/2"
+      className="absolute group flex items-center gap-2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto p-3 -m-3 cursor-pointer"
       style={{ left: `${left}%`, top: `${top}%` }}
       aria-label={planet.name}
     >
       <span
-        className="relative block rounded-full transition-transform duration-300 group-hover:scale-125"
+        className="relative block rounded-full transition-transform duration-300 group-hover:scale-150"
         style={{
           width: planet.featured ? 18 : 14,
           height: planet.featured ? 18 : 14,
@@ -46,11 +46,11 @@ function PlanetDot({
         }}
       >
         {planet.featured && (
-          <span className="absolute inset-0 rounded-full animate-ping" style={{ background: meta.glow }} />
+          <span className="absolute inset-0 rounded-full animate-ping pointer-events-none" style={{ background: meta.glow }} />
         )}
       </span>
       <span
-        className={`whitespace-nowrap font-display text-[11px] tracking-[0.08em] transition-colors ${planet.featured ? 'text-ink' : 'text-ink-dim group-hover:text-ink'}`}
+        className={`whitespace-nowrap font-display text-[11px] tracking-[0.08em] transition-colors pointer-events-none ${planet.featured ? 'text-ink' : 'text-ink-dim group-hover:text-ink'}`}
         style={{ animation: `spin ${period}s linear infinite ${reversed ? 'normal' : 'reverse'}` }}
       >
         {planet.name}
@@ -215,10 +215,10 @@ export default function Galaxy({ index = '02' }: { index?: string }) {
             whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
             viewport={{ once: true, margin: '-10%' }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="hidden lg:block relative w-full max-w-[620px] mx-auto aspect-square"
+            className="hidden lg:block relative w-full max-w-[620px] mx-auto aspect-square [&:hover_.orbit-spin]:[animation-play-state:paused]"
           >
             {/* central star */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center pointer-events-none">
               <div
                 className="w-12 h-12 rounded-full animate-twinkle"
                 style={{
@@ -236,7 +236,7 @@ export default function Galaxy({ index = '02' }: { index?: string }) {
               return (
                 <div
                   key={r}
-                  className="absolute inset-0 [&:hover]:[animation-play-state:paused] [&:hover_*]:[animation-play-state:paused]"
+                  className="orbit-spin absolute inset-0 pointer-events-none"
                   style={{ animation: `spin ${period}s linear infinite ${reversed ? 'reverse' : 'normal'}` }}
                 >
                   <div
@@ -262,7 +262,7 @@ export default function Galaxy({ index = '02' }: { index?: string }) {
             })}
 
             {/* legend */}
-            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-x-5 gap-y-2 w-[130%]">
+            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-x-5 gap-y-2 w-[130%] pointer-events-none">
               {CATEGORIES.map((c) => (
                 <span key={c} className="flex items-center gap-1.5 font-display text-[10px] tracking-[0.12em] text-ink-faint uppercase">
                   <span className="w-2 h-2 rounded-full" style={{ background: CATEGORY_META[c].color }} />
